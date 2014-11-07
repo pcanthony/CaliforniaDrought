@@ -1,0 +1,279 @@
+subset(iris, "Species" = virginica)
+subset(iris, "Species" == virginica)
+subset(iris, "Species" = "virginica")
+iris$Species
+myspecies <- iris$Species
+myspecies
+?gl
+gl(myspecies)
+myspecies[virginica]
+myspecies["virginica"]
+iris[, "Species"]
+iris[, "Species" == "virginica"]
+print(iris[, "Species" == "virginica"])
+iris[, "Species" == virginica]
+iris[, "virginica"]
+iris[, "Species"]
+?subset
+subset(iris, Species == virginica)
+iris
+iris[1, 1]
+iris[1, 5]
+subset(iris, Sepal.Length == 5.1)
+subset(iris, Species = setosa)
+subset(iris, Species == setosa)
+subset(iris, Species == "setosa")
+subset(iris, Species == "virginica")
+myv <- subset(iris, Species == "virginica")
+myv
+?mean
+mean(myv[, Sepal.Length])
+myv[, Sepal.Length]
+myv[, "Sepal.Length"]
+mean(myv[, "Sepal.Length"])
+iris
+apply(iris[, 1:4], 1, mean)
+apply(iris, 1, mean)
+rowMeans(iris[, 1:4])
+apply(iris[, 1:4], 2, mean)
+library(datasets)
+data(mtcars)
+?mtcars
+mtcars
+split(mtcars, mtcars$cyl)
+sapply(split(mtcars$mpg, mtcars$cyl), mean)
+split(mtcars$mpg, mtcars$cyl)
+?sapply
+tapply(mtcars$cyl, mtcars$mpg, mean)
+mean(mtcars$mpg, mtcars$cyl)
+mtcars
+split(mtcars$hp, mtcars$cyl)
+sapply(split(mtcars$hp, mtcars$cyl), mean)
+?!
+myhp <- sapply(split(mtcars$hp, mtcars$cyl), mean)
+?summary
+summary(myhp)
+?range
+range(myhp)
+myhp[, 3] - myhp[, 1]
+myhp[, 8] - myhp[, 4]
+myhp[, 1]
+myhp[, "8"]
+myhp
+myhp[3] - myhp[1]
+?debug
+?ls
+debug(ls)
+ls(y ~ x)
+n
+sapply(split(mtcars$mpg, mtcars$cyl), mean)
+apply(iris[, 1:4], 2, mean)
+library(datasets)
+RProf()
+?RProf()
+?RProf
+??RProf
+?summaryRProf
+library(utils)
+?RProf
+?summaryRProf
+library(stockPortfolio)
+?system.time()
+library(utils)
+?RProf
+?RProf()
+?summaryRProf()
+summaryRProf()
+library(datasets)
+RProf()
+?RProf()
+?Rprof()
+library(datasets)
+Rprof()
+?lm
+ctl <- c(4.17,5.58,5.18,6.11,4.50,4.61,5.17,4.53,5.33,5.14)#
+trt <- c(4.81,4.17,4.41,3.59,5.87,3.83,6.03,4.89,4.32,4.69)#
+group <- gl(2, 10, 20, labels = c("Ctl","Trt"))#
+weight <- c(ctl, trt)
+lm.D9 <- lm(weight ~ group)
+summaryRprof{library(datasets)#
+Rprof()#
+fit <- lm(y ~ x1 + x2)#
+Rprof(NULL)}
+summaryRprof(){library(datasets)#
+Rprof()#
+fit <- lm(y ~ x1 + x2)#
+Rprof(NULL)})
+summaryRprof({library(datasets)#
+Rprof()#
+fit <- lm(y ~ x1 + x2)#
+Rprof(NULL)})
+summaryRprof({library(datasets)#
+Rprof()#
+fit <- lm(weight ~ group)#
+Rprof(NULL)})
+?summaryRprof
+summaryRprof(fit <- lm(weight ~ group))
+summaryRprof()
+summaryRprof({library(datasets)#
+Rprof()#
+fit <- lm(weight ~ group)#
+Rprof(NULL)})
+summaryRprof(filename = none, {library(datasets)#
+Rprof()#
+fit <- lm(weight ~ group)#
+Rprof(NULL)})
+summaryRprof(filename = "none", {library(datasets)#
+Rprof()#
+fit <- lm(weight ~ group)#
+Rprof(NULL)})
+summaryRprof()$by.total
+Rprof()
+fit <- lm(weight ~ group)
+Rprof(NULL)
+summaryRprof()$by.total
+set.seed(10)#
+x <- rbinom(10, 10, 0.5)#
+e <- rnorm(10, 0, 20)#
+y <- 0.5 + 2 * x + e
+plot(y,x)
+plot(x,y)
+set.seed(1)#
+rpois(5, 2)
+?set.seed
+gwd
+gwd()
+getwd()
+ls()
+q()
+binom.test(3,10,(1/2),alternative="less")
+binom.test(2,10,(1/2),alternative="less")
+binom.test(5,10,(1/2),alternative="less")
+?binom.test
+?binomial
+?binomial.test
+?binom.tes
+?binom.test
+binom.test(7,15,p = 0.3, alternative = "less")
+binom.test(7,15,p = 0.3, alternative = "greater")
+binom.test(6,15,p = 0.3, alternative = "greater")
+binom.test(5,15,p = 0.3, alternative = "greater")
+binom.test(15,20,p = 0.5, alternative = "greater")
+binom.test(7,15,p = 0.3, alternative = "greater")
+binom.test(8,15,p = 0.6, alternative = "less")
+binom.test(5000,10000,p = 0.49, alternative = "greater")
+binom.test(5000,10000,p = 0.505, alternative = "less")
+binom.test(8,15,p = 0.6, alternative = "less")
+print 8/15
+8/15
+binom.test(7,15,p = 0.6, alternative = "greater")
+?binom.test
+binom.test(7,15,p = 0.6, alternative = "less")
+binom.test(7,15,p = 0.3, alternative = "greater")
+13.1 + 86.9
+binom.test(8,15,p = 0.3, alternative = "greater")
+binom.test(5000,10000,p = 0.505, alternative = "less")
+binom.test(9,15,p = 0.3, alternative = "greater")
+binom.test(10,15,p = 0.3, alternative = "greater")
+binom.test(8,15,p = 0.3, alternative = "greater")
+binom.test(7,15,p = 0.6, alternative = "less")
+binom.test(8,15,p = 0.6, alternative = "less")
+binom.test(7,15,p = 0.6, alternative = "less")
+binom.test(6,15,p = 0.6, alternative = "less")
+8/15
+7/15
+6/15
+binom.test(6,15,p = 0.6, alternative = "less")
+binom.test(7,15,p = 0.3, alternative = "greater")
+binom.test(6,15,p = 0.3, alternative = "greater")
+binom.test(5,15,p = 0.6, alternative = "less")
+binom.test(6,15,p = 0.6, alternative = "less")
+binom.test(7,15,p = 0.6, alternative = "less")
+binom.test(8,15,p = 0.6, alternative = "less")
+binom.test(9,15,p = 0.6, alternative = "less")
+binom.test(5,15,p = 0.3, alternative = "greater")
+binom.test(6,15,p = 0.3, alternative = "greater")
+binom.test(7,15,p = 0.3, alternative = "greater")
+binom.test(8,15,p = 0.3, alternative = "greater")
+binom.test(9,15,p = 0.3, alternative = "greater")
+binom.test(7,15,p = 0.3, alternative = "greater")
+myx1 <- c(89, 72, 94, 69)
+myx1
+summary(myx1)
+mynorm <- (myx1 - 81)/25
+mynorm
+mynorm2 <- myx1/25
+mynorm2
+summary(mynorm2)
+mynorm2 <- mynorm2 - 3.24
+mynorm2
+myx2 <- c(7921, 5184, 8836, 4761)
+summary(myx2)
+max(myx2)
+print(max(myx2)- min(myx2))
+mynorm2 <- (myx2 - mean(myx2))/4075
+mynorm2
+?par
+library(nlme)
+library(lattice)
+xyplot(weight ~ Time | Diet, BodyWeight)
+lm()
+ls()
+names(BodyWeight)
+?axis()
+?text()
+?lines()
+?llines()
+?par
+?trellis.par.set()
+?splom
+library(datasets)
+data(airquality)
+qplot(Wind, Ozone, data = airquality, facets = . ~ factor(Month))
+library(ggplot2)
+qplot(Wind, Ozone, data = airquality, facets = . ~ factor(Month))
+airquality = transform(airquality, Month = factor(Month))#
+qplot(Wind, Ozone, data = airquality, facets = . ~ Month)
+names(airquality)
+head(airquality)
+qplot(votes, rating, data = movies)
+?geom_smooth
+qplot(votes, rating, data = movies) + geom_smooth()
+qplot(votes, rating, data = movies, panel = panel.loess)
+?stats_smooth
+?stats_smooth()
+?qplot
+qplot(votes, rating, data = movies, panel = panel.loess)
+qplot(votes, rating, data = movies, smooth = "loess")
+qplot(votes, rating, data = movies) + stats_smooth("loess")
+q
+q()
+?ddply
+getwd()
+source("/Users/Peter/Dropbox/private/Applications/Insight Data Science/Precip.R")
+allMonthlyPrecipData()
+warnings()
+ls()
+head(allData)
+allData[(is.na(allData$Total)),]
+head(allData[rowSums(is.na(allData[,3:14])) == 0,])
+test <- allData[rowSums(is.na(allData[,3:14])) == 0,]
+test[is.na(test$Total),]
+?na.omit
+test <- apply(allData, 2, function(x) length(which(is.na(x))))
+head(test)
+test <- rowSums(is.na(allData))
+head(test)
+test
+str(test)
+head(test)
+test <- allData[(rowSums(is.na(allData)) < 12), ]
+head(test)
+test[(is.na(test$Total)),]
+source("/Users/Peter/Dropbox/private/Applications/Insight Data Science/Precip.R")
+source("/Users/Peter/Dropbox/private/Applications/Insight Data Science/Precip.R")
+allMonthlyPrecipData()
+source("/Users/Peter/Dropbox/private/Applications/Insight Data Science/Precip.R")
+allMonthlyPrecipData()
+source("/Users/Peter/Dropbox/private/Applications/Insight Data Science/Precip.R")
+allMonthlyPrecipData()
